@@ -12,7 +12,6 @@ while x == 0
     puts "1-Soma"
     puts "2-Subtração"
     puts "3-Multiplicação"
-    puts "4-divisão"
 
     opcao = gets.chomp.to_i
 
