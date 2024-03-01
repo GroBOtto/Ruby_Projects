@@ -1,0 +1,76 @@
+x = 0
+
+while x == 0 
+
+
+    puts "###Calculadora###"
+
+    puts "Escolha uma opção abaixo"
+ 
+
+
+    puts "1-Soma"
+    puts "2-Subtração"
+    puts "3-Multiplicação"
+    puts "4-divisão"
+
+    opcao = gets.chomp.to_i
+
+        case opcao  
+
+            when 1
+
+                puts "você escolheu a opção soma"
+                puts "digite o primeiro número"
+                num1 =gets.chomp.to_f
+                puts "digite o segundo número"
+                num2 =gets.chomp.to_f
+
+                soma = num1 + num2 
+
+                puts "O resultado da sua soma é #{soma}"
+ 
+            when 2
+
+                puts "voce escolheu a opção subtração"
+                puts "digite o primeiro número"
+                num3 = gets.chomp.to_f
+                puts "digite o segundo número"
+                num4 = gets.chomp.to_f
+
+                subtracao = num3 - num4 
+
+                puts "O resultado da subtracao é #{subtracao}"
+     
+ 
+             when 3
+
+                puts "você escolheu a opção multiplicação"
+                puts "digite o primerio numero"
+                num5 = gets.chomp.to_f
+                puts "digite o segundo numero"
+                num6 = gets.chomp.to_f
+
+                multiplicação = num5 * num6
+
+                puts "o resultado da multiplicação é  #{multiplicação}"
+                
+             else 
+                print "Erro - informe novamente os valores"
+        
+            end 
+          
+    
+puts "deseja fazer mais uma operação?"
+
+puts "0-continuar"
+puts""
+puts "9-sair"
+
+x = gets.chomp.to_i
+
+if x == 9
+    puts "você está saindo do programa"
+    end
+
+end
