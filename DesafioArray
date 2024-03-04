@@ -1,0 +1,19 @@
+potencia = []
+
+puts"insira o primeiro numero"
+potencia = potencia.push(gets.chomp.to_i)
+
+puts"insira o segundo numero"
+potencia = potencia.push(gets.chomp.to_i)
+
+puts"insira o terceiro número"
+potencia = potencia.push(gets.chomp.to_i)
+
+puts "#{potencia}"
+
+
+ potencia.map! do |valores| 
+     valores ** 3
+ end 
+
+puts "a potencia dos números inseridos são #{potencia}"
