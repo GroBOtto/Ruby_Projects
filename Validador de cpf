@@ -1,0 +1,31 @@
+
+def validarCpf (ncpf,nome)
+
+    if CPF.valid?(ncpf)
+
+#se verdadeira condição uma hash é criada
+        consulta_cpf = Hash.new
+
+#parametros são inseridos no hash
+        consulta_cpf.store(nome,ncpf)
+
+#print final do hash
+        puts "O #{consulta_cpf} foi verificado com sucesso"
+        puts "Seu cpf é verdadeiro"
+
+    else
+     puts "seu número de cpf está incoreto"
+
+    end 
+end
+
+#coleta do nome
+puts "digite o seu nome"
+nome = gets.chomp
+
+#coleta do numero do cpf
+puts "digite o seu cpf"
+cpf = gets.chomp
+
+#passagem dos parâmetros para o método validarCpf 
+validarCpf(cpf,nome)
